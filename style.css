@@ -13,9 +13,9 @@ body {
 /* NAVBAR */
 .navbar {
   background: #020617;
-  padding: 15px 0;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 .nav-container {
@@ -24,7 +24,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 15px 20px;
 }
 
 .logo {
@@ -59,7 +59,6 @@ body {
 
 .hero p {
   font-size: 18px;
-  opacity: 0.9;
 }
 
 /* SECTIONS */
@@ -69,22 +68,21 @@ body {
   padding: 0 20px;
 }
 
+.section.light {
+  background: white;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
 .section h2 {
   font-size: 28px;
   margin-bottom: 20px;
-  color: #0f172a;
-}
-
-.section.light {
-  background: #ffffff;
-  padding: 50px 20px;
-  border-radius: 10px;
 }
 
 /* SKILLS */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 15px;
 }
 
